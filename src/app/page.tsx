@@ -14,11 +14,11 @@ export default async function Home({ searchParams }: { searchParams: Filter }) {
     }
 
     // Get data on success and pass to main page content
-    const {data} = await res.json()
+    const {data, total} = await res.json()
 
     return (
         <>
-          <Main data={data} total={data.total} />
+          <Main data={data} total={total} />
         </>
     );
 }

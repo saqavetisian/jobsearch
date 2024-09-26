@@ -94,7 +94,7 @@ const List = ({data}: { data: Job[] }) => {
                             <ellipse cx="54.8651" cy="25.4445" rx="1.11111" ry="1.11111" fill="#4F46E5"/>
                         </svg>
                         <div>
-                            <h2 className="text-center text-white text-lg font-semibold leading-7 pb-1">There’s no {currentTab === '1' ? 'bookmarked' : ''}
+                            <h2 className="text-center text-white text-lg font-semibold leading-7 pb-1">There’s no {currentTab === '2' ? 'bookmarked' : ''}{' '}
                                 jobs here</h2>
                             <p className="text-center text-white text-base font-normal leading-relaxed pb-4">Try
                                 changing your filters to <br/>see jobs </p>

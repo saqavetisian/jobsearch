@@ -31,7 +31,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "../../AppData/Local/JetBrains/WebStorm2021.2/javascript/typings/jest/29.5.13/node_modules/@types/jest/index.d.ts"
   ],
   "exclude": [
     "node_modules"

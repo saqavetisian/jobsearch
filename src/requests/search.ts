@@ -1,4 +1,6 @@
-async function getItems({ location = '', jobTitle = ''  , page = ''  }) {
+import {Filter} from "../utility/types";
+
+async function getItems({ location = '', jobTitle = ''  , page = '', company = '', salary = '', error  }: Filter) {
     const url = new URL(`${process.env.APP_URL}/api/jobs`)
 
     if (location) {
@@ -13,8 +15,19 @@ async function getItems({ location = '', jobTitle = ''  , page = ''  }) {
         url.searchParams.set('page', page)
     }
 
-    const res = await fetch(url.href)
-    return res.json()
+    if (company) {
+        url.searchParams.set('company', company)
+    }
+
+    if (salary) {
+        url.searchParams.set('salary', salary)
+    }
+
+    if (error) {
+        url.searchParams.set('error', error)
+    }
+
+    return await fetch(url.href)
 }
 
 export {

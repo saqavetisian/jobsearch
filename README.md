@@ -8,7 +8,7 @@ First, install the packages
 npm i
 ```
 
-make `.env` file and add this to .env
+copy .env from .enc.example file using this command
 
 ```bash
 cp .env.example .env

@@ -44,7 +44,12 @@ Standard resource: [https://nextjs.org/docs/app/building-your-application/data-f
 
 ### Caching
 Instead of making two separate API requests (`api1 and api2`), I consolidated them into a single request. I also added a 5-second delay to simulate loading for non-cached data. This allows you to observe the difference: when data is cached, fetching is significantly faster as the delay is skipped.
+please check `route.ts` file todo, the best way to have several API cals is backend
 Standard resource: [https://nextjs.org/docs/app/building-your-application/caching](https://nextjs.org/docs/app/building-your-application/caching)
+Note: for several api cals version you can find here
+[https://next-jobs-pages.vercel.app/](https://next-jobs-pages.vercel.app/)
+[https://github.com/saqavetisian/next-jobs-pages](https://github.com/saqavetisian/next-jobs-pages)
+
 
 ### Design solutions
 I made this project branding multiuse components, like input label, seperated code by logic, also used  

@@ -47,6 +47,7 @@ export async function GET(request: NextRequest) {
 
     // Add some delay to test caching, loading and etc
     await new Promise((resolve) => {
+        // @TODO Use Promise.all([api1, api2]) for handling multiple endpoints efficiently.
         setTimeout(() => {
             resolve({ message: "Successfully delayed" })
         }, 5000)
